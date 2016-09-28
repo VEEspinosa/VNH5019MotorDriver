@@ -111,10 +111,10 @@ void VNH5019MotorDriver::setMtrBrake(int16_t brake) {
 		
 }
 
-float VNH5019MotorDriver::getCurrentMilliAmps() {
+uint16_t VNH5019MotorDriver::getCurrentMilliAmps() {
 	// Read 10bit ADC pin connected to CS, and scale to mA.
-	// 3.3V / 1024 ADC LSB / 144 mA per LSB = 22.4 mA per LSB
-	return analogRead(_CS) * 22.4;
+	// 3.3V / 1024 ADC LSB / 140 mA per LSB = 23 mA per LSB
+	return analogRead(_CS) * 23;
 }
 
 bool VNH5019MotorDriver::getFaultA() {

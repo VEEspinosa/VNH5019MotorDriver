@@ -42,7 +42,7 @@ class VNH5019MotorDriver {
 		void init();	// Initialize pins, set PWM frequency to 20kHz
 		void setMtrSpeed(int16_t speed); // Speed value serves as PWM dutycycle
 		void setMtrBrake(int16_t brake); // Brake value of 0 is also freewheeling, 1023 is full brake
-		float getCurrentMilliAmps();
+		uint16_t getCurrentMilliAmps();
 		bool getFaultA();
 		bool getFaultB();
 		
