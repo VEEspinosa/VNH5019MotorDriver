@@ -1,0 +1,20 @@
+#######################################
+# Syntax Coloring Map VNH5019MotorDriver
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+VNH5019MotorDriver	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+init	KEYWORD2
+setMtrSpeed	KEYWORD2
+setMtrBrake	KEYWORD2
+getCurrentMilliAmps	KEYWORD2
+getFaultA	KEYWORD2
+getFaultB	KEYWORD2
